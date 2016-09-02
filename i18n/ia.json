@@ -1,0 +1,8 @@
+{
+  "@metadata": {
+    "authors": [
+      "McDutchie"
+    ]
+  },
+  "authremoteuser-desc": "Aperi automaticamente le session pro usatores con le variabile de ambiente <code>REMOTE_USER</code>"
+}

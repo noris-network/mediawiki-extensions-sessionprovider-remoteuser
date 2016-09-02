@@ -1,0 +1,31 @@
+{
+  "name": "AuthRemoteuser",
+  "namemsg": "authremoteuser-extensionname",
+  "version": "1.3.0",
+  "author": ["Otheus Shelling", "Rusty Burchfield", "James Kinsman", "Daniel Thomas", "Ian Ward Comfort", "[[mw:User:MarkAHershberger|Mark A. Hershberger]]", "Jonas Gröger", "Andreas Fink"],
+  "url": "https://www.mediawiki.org/wiki/Extension:AuthRemoteuser",
+  "descriptionmsg": "authremoteuser-desc",
+  "type": "authentication",
+  "license-name": "GPL-2.0+",
+  "MessagesDirs": {
+    "AuthRemoteuser": [
+      "i18n"
+    ]
+  },
+  "AutoloadClasses": {
+    "AuthRemoteuser": "AuthRemoteuser.body.php"
+  },
+  "SessionProviders": {
+    "AuthRemoteuser": {
+      "class": "AuthRemoteuser",
+      "args": [{"priority": 80}]
+    }
+  },
+  "config": {
+    "_prefix": "",
+    "wgAuthRemoteuserDomain": "",
+    "wgAuthRemoteuserMailDomain": "example.wiki",
+    "wgAuthRemoteuserNotify": false
+  },
+  "manifest_version": 1
+}

@@ -1,0 +1,9 @@
+{
+  "@metadata": {
+    "authors": [
+      "Fitoschido",
+      "Macofe"
+    ]
+  },
+  "authremoteuser-desc": "Autentica usuarios automáticamente con la variable de entorno <code>REMOTE_USER</code>"
+}

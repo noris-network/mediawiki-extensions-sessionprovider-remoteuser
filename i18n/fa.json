@@ -1,0 +1,8 @@
+{
+  "@metadata": {
+    "authors": [
+      "Alirezaaa"
+    ]
+  },
+  "authremoteuser-desc": "به طور خودکار کاربرانی را که از متغیر محیطی <code>REMOTE_USER</code> استفاده می‌کنند ثبت می‌کند"
+}

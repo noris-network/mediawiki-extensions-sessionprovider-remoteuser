@@ -1,0 +1,9 @@
+{
+  "@metadata": {
+    "authors": [
+      "Ата",
+      "Andriykopanytsia"
+    ]
+  },
+  "authremoteuser-desc": "Автоматично виконує вхід в систему користувачів, з використанням змінної середовища <code>REMOTE_USER</code>"
+}
