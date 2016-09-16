@@ -16,6 +16,9 @@ First, add this to your `LocalSettings.php`:
     wfLoadExtension( 'AuthRemoteuser' );
     $wgAuthRemoteuserMailDomain = 'example.com';
     
+    # If you want the extension to autocreate users not existing you have to add 
+    $wgGroupPermissions['*']['autocreateaccount'] = true;
+    
     # Settings: AuthRemoteuser
     $wgGroupPermissions['*']['createaccount']   = false;
     $wgGroupPermissions['*']['read']            = false;
