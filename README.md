@@ -30,6 +30,11 @@ It will be appended to the username and should form a valid email address. If
 i.e. your username to login (==`REMOTE_USER`) is `jdoe`, the email of the user
 will be `jdoe@example.com`.
 
+If your environment uses a different variable then `REMOTE_USER`
+you can adjust this like so:
+
+    $wgAuthRemoteuserEnvVariable = 'HTTP_X_REMOTE_USER';
+
 ## Implementation
 The constructor of AuthRemoteuser registers a hook to do the automatic login.
 Storing the AuthRemoteuser object in $wgAuth tells MediaWiki that instead of the
