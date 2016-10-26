@@ -124,6 +124,13 @@ class AuthRemoteuser extends MediaWiki\Session\ImmutableSessionProviderWithCooki
         if (Hooks::run("AuthRemoteUserInitUser",
             array($user, true))
         ) {
+            // Check if above hook or some other effect (e.g.: https://phabricator.wikimedia.org/T95839 )
+            // already created a user in the db. If so, reuse that one.
+            $userFromDb = $user->getInstanceForUpdate();
+            if (null !== $userFromDb) {
+                $user = $user->getInstanceForUpdate();
+            }
+
             $this->setRealName($user);
 
             $this->setEmail($user, $username);
