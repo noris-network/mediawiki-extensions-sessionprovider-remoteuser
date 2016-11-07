@@ -59,7 +59,8 @@ class AuthRemoteuser extends MediaWiki\Session\ImmutableSessionProviderWithCooki
     {
         // Have a session ID?
         $id = $this->getSessionIdFromCookie($request);
-        if (null === $id) {
+        // #6 assign a new sessionid if the id is null or if the session is no longer valid
+        if ((null === $id)||(!MediaWiki\Session\SessionManager::singleton()->getSessionById($id))) {
             $username = $this->getRemoteUsername();
             $sessionInfo = $this->newSessionForRequest($username, $request);
 
