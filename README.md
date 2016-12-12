@@ -44,7 +44,7 @@ the login attempts.
 # Original version
 
 The original version of this fork can be found on the [MediaWiki extension site]
-(http://www.mediawiki.org/wiki/Extension:AuthRemoteuser).
+(https://www.mediawiki.org/wiki/Extension:Auth_remoteuser).
 
 # License (GPLv2)
 
