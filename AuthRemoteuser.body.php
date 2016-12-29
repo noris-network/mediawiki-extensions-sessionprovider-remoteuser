@@ -156,8 +156,6 @@ class AuthRemoteuser extends MediaWiki\Session\ImmutableSessionProviderWithCooki
 
         if ($wgAuthRemoteuserName) {
             $user->setRealName($wgAuthRemoteuserName);
-        } else {
-            $user->setRealName('');
         }
     }
 
@@ -181,7 +179,7 @@ class AuthRemoteuser extends MediaWiki\Session\ImmutableSessionProviderWithCooki
                     "", $username);
             }
         } else {
-            $username = "";
+            $username = null;
         }
 
         return $username;

@@ -1,7 +1,7 @@
 {
   "name": "AuthRemoteuser",
   "namemsg": "authremoteuser-extensionname",
-  "version": "1.3.1",
+  "version": "1.3.2",
   "author": ["Otheus Shelling", "Rusty Burchfield", "James Kinsman", "Daniel Thomas", "Ian Ward Comfort", "[[mw:User:MarkAHershberger|Mark A. Hershberger]]", "Jonas Gröger", "Andreas Fink"],
   "url": "https://www.mediawiki.org/wiki/Extension:AuthRemoteuser",
   "descriptionmsg": "authremoteuser-desc",
